@@ -1793,6 +1793,7 @@ public class Calculator extends javax.swing.JFrame {
                 lblExpression.setText(expBuffer + outBuffer + " = ");
                 break;
             }
+            default: result = valBuffer;
         }
         
         lblExpression.setText(expBuffer + "√(" + outBuffer + ")");
@@ -1826,6 +1827,7 @@ public class Calculator extends javax.swing.JFrame {
                 lblExpression.setText(expBuffer + outBuffer + " = ");
                 break;
             }
+            default: result = valBuffer;
         }
         
         lblExpression.setText(expBuffer + "sqr(" + outBuffer + ")");
@@ -1859,6 +1861,7 @@ public class Calculator extends javax.swing.JFrame {
                 lblExpression.setText(expBuffer + outBuffer + " = ");
                 break;
             }
+            default: result = valBuffer;
         }
         
         lblExpression.setText(expBuffer + "1/(" + outBuffer + ")");
@@ -1892,6 +1895,7 @@ public class Calculator extends javax.swing.JFrame {
                 lblExpression.setText(expBuffer + outBuffer + " = ");
                 break;
             }
+            default: result = valBuffer;
         }
         
         lblExpression.setText(expBuffer + String.valueOf(valBuffer));
