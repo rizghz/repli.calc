@@ -385,7 +385,7 @@ public class Calculator extends javax.swing.JFrame {
         btnNeg.setBackground(new java.awt.Color(58, 60, 57));
         btnNeg.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnNeg.setForeground(java.awt.Color.white);
-        btnNeg.setText("- x");
+        btnNeg.setText("+/-");
         btnNeg.setBorder(null);
         btnNeg.setContentAreaFilled(false);
         btnNeg.setFocusPainted(false);
@@ -405,6 +405,11 @@ public class Calculator extends javax.swing.JFrame {
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 btnNegMouseReleased(evt);
+            }
+        });
+        btnNeg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNegActionPerformed(evt);
             }
         });
 
@@ -433,6 +438,11 @@ public class Calculator extends javax.swing.JFrame {
                 btnDotMouseReleased(evt);
             }
         });
+        btnDot.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDotActionPerformed(evt);
+            }
+        });
 
         btnEq.setBackground(new java.awt.Color(64, 78, 113));
         btnEq.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -457,6 +467,11 @@ public class Calculator extends javax.swing.JFrame {
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 btnEqMouseReleased(evt);
+            }
+        });
+        btnEq.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEqActionPerformed(evt);
             }
         });
 
@@ -485,6 +500,11 @@ public class Calculator extends javax.swing.JFrame {
                 btnAddMouseReleased(evt);
             }
         });
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddActionPerformed(evt);
+            }
+        });
 
         btnSub.setBackground(new java.awt.Color(49, 51, 49));
         btnSub.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -509,6 +529,11 @@ public class Calculator extends javax.swing.JFrame {
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 btnSubMouseReleased(evt);
+            }
+        });
+        btnSub.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSubActionPerformed(evt);
             }
         });
 
@@ -537,6 +562,11 @@ public class Calculator extends javax.swing.JFrame {
                 btnMultiMouseReleased(evt);
             }
         });
+        btnMulti.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMultiActionPerformed(evt);
+            }
+        });
 
         btnDiv.setBackground(new java.awt.Color(49, 51, 49));
         btnDiv.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -561,6 +591,11 @@ public class Calculator extends javax.swing.JFrame {
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 btnDivMouseReleased(evt);
+            }
+        });
+        btnDiv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDivActionPerformed(evt);
             }
         });
 
@@ -589,6 +624,11 @@ public class Calculator extends javax.swing.JFrame {
                 btnPerMouseReleased(evt);
             }
         });
+        btnPer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPerActionPerformed(evt);
+            }
+        });
 
         btnExp.setBackground(new java.awt.Color(49, 51, 49));
         btnExp.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -613,6 +653,11 @@ public class Calculator extends javax.swing.JFrame {
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 btnExpMouseReleased(evt);
+            }
+        });
+        btnExp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExpActionPerformed(evt);
             }
         });
 
@@ -641,6 +686,11 @@ public class Calculator extends javax.swing.JFrame {
                 btnSqrtMouseReleased(evt);
             }
         });
+        btnSqrt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSqrtActionPerformed(evt);
+            }
+        });
 
         btnDel.setBackground(new java.awt.Color(49, 51, 49));
         btnDel.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -665,6 +715,11 @@ public class Calculator extends javax.swing.JFrame {
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 btnDelMouseReleased(evt);
+            }
+        });
+        btnDel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDelActionPerformed(evt);
             }
         });
 
@@ -693,6 +748,11 @@ public class Calculator extends javax.swing.JFrame {
                 btnClearMouseReleased(evt);
             }
         });
+        btnClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClearActionPerformed(evt);
+            }
+        });
 
         btnClearEntry.setBackground(new java.awt.Color(49, 51, 49));
         btnClearEntry.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
@@ -719,6 +779,11 @@ public class Calculator extends javax.swing.JFrame {
                 btnClearEntryMouseReleased(evt);
             }
         });
+        btnClearEntry.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClearEntryActionPerformed(evt);
+            }
+        });
 
         btnPerc.setBackground(new java.awt.Color(49, 51, 49));
         btnPerc.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -743,6 +808,11 @@ public class Calculator extends javax.swing.JFrame {
             }
             public void mouseReleased(java.awt.event.MouseEvent evt) {
                 btnPercMouseReleased(evt);
+            }
+        });
+        btnPerc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPercActionPerformed(evt);
             }
         });
 
@@ -1454,82 +1524,379 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDelMouseReleased
 
     private void btnNum_0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_0ActionPerformed
-        if (!lblOutput.getText().equals("0")) {
+        if (lblOutput.getText().equals("0") || isResultMode) {
+            lblOutput.setText("0");
+        } else {
             lblOutput.setText(lblOutput.getText() + "0");
         }
+        isResultMode = false;
     }//GEN-LAST:event_btnNum_0ActionPerformed
 
     private void btnNum_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_1ActionPerformed
-        if (lblOutput.getText().equals("0")) {
+        if (lblOutput.getText().equals("0") || isResultMode) {
             lblOutput.setText("1");
         } else {
             lblOutput.setText(lblOutput.getText() + "1");
         }
+        isResultMode = false;
     }//GEN-LAST:event_btnNum_1ActionPerformed
 
     private void btnNum_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_2ActionPerformed
-        if (lblOutput.getText().equals("0")) {
+        if (lblOutput.getText().equals("0") || isResultMode) {
             lblOutput.setText("2");
         } else {
             lblOutput.setText(lblOutput.getText() + "2");
         }
+        isResultMode = false;
     }//GEN-LAST:event_btnNum_2ActionPerformed
 
     private void btnNum_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_3ActionPerformed
-        if (lblOutput.getText().equals("0")) {
+        if (lblOutput.getText().equals("0") || isResultMode) {
             lblOutput.setText("3");
         } else {
             lblOutput.setText(lblOutput.getText() + "3");
         }
+        isResultMode = false;
     }//GEN-LAST:event_btnNum_3ActionPerformed
 
     private void btnNum_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_4ActionPerformed
-        if (lblOutput.getText().equals("0")) {
+        if (lblOutput.getText().equals("0") || isResultMode) {
             lblOutput.setText("4");
         } else {
             lblOutput.setText(lblOutput.getText() + "4");
         }
+        isResultMode = false;
     }//GEN-LAST:event_btnNum_4ActionPerformed
 
     private void btnNum_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_5ActionPerformed
-        if (lblOutput.getText().equals("0")) {
+        if (lblOutput.getText().equals("0") || isResultMode) {
             lblOutput.setText("5");
         } else {
             lblOutput.setText(lblOutput.getText() + "5");
         }
+        isResultMode = false;
     }//GEN-LAST:event_btnNum_5ActionPerformed
 
     private void btnNum_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_6ActionPerformed
-        if (lblOutput.getText().equals("0")) {
+        if (lblOutput.getText().equals("0") || isResultMode) {
             lblOutput.setText("6");
         } else {
             lblOutput.setText(lblOutput.getText() + "6");
         }
+        isResultMode = false;
     }//GEN-LAST:event_btnNum_6ActionPerformed
 
     private void btnNum_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_7ActionPerformed
-        if (lblOutput.getText().equals("0")) {
+        if (lblOutput.getText().equals("0") || isResultMode) {
             lblOutput.setText("7");
         } else {
             lblOutput.setText(lblOutput.getText() + "7");
         }
+        isResultMode = false;
     }//GEN-LAST:event_btnNum_7ActionPerformed
 
     private void btnNum_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_8ActionPerformed
-        if (lblOutput.getText().equals("0")) {
+        if (lblOutput.getText().equals("0") || isResultMode) {
             lblOutput.setText("8");
         } else {
             lblOutput.setText(lblOutput.getText() + "8");
         }
+        isResultMode = false;
     }//GEN-LAST:event_btnNum_8ActionPerformed
 
     private void btnNum_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNum_9ActionPerformed
-        if (lblOutput.getText().equals("0")) {
+        if (lblOutput.getText().equals("0") || isResultMode) {
             lblOutput.setText("9");
         } else {
             lblOutput.setText(lblOutput.getText() + "9");
         }
+        isResultMode = false;
     }//GEN-LAST:event_btnNum_9ActionPerformed
+
+    private void btnDelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDelActionPerformed
+        if (!isResultMode) {
+            lblOutput.setText(lblOutput.getText().substring(0, lblOutput.getText().length() - 1));
+        }
+        if (lblOutput.getText().equals("") || lblOutput.getText().equals("-")) {
+            lblOutput.setText("0");
+        }
+    }//GEN-LAST:event_btnDelActionPerformed
+
+    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+        isResultMode = false;
+        lblOutput.setText("0");
+        lblExpression.setText("");
+        result = 0;
+    }//GEN-LAST:event_btnClearActionPerformed
+
+    private void btnClearEntryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearEntryActionPerformed
+        isResultMode = false;
+        lblOutput.setText("0");
+    }//GEN-LAST:event_btnClearEntryActionPerformed
+
+    private void btnEqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqActionPerformed
+        String expBuffer = lblExpression.getText();
+        String outBuffer = lblOutput.getText();
+        double valBuffer = Double.parseDouble(outBuffer);
+        if (expBuffer.isBlank() || isResultMode) {
+            result = Double.parseDouble(outBuffer);
+            lblExpression.setText(String.valueOf(result) + " = ");
+        } else {
+            switch (operator) {
+                case '+': {
+                    result += valBuffer;
+                    lblExpression.setText(expBuffer + outBuffer + " = ");
+                    break;
+                }
+                case '-': {
+                    result -= valBuffer;
+                    lblExpression.setText(expBuffer + outBuffer + " = ");
+                    break;
+                }
+                case '×': {
+                    result *= valBuffer;
+                    lblExpression.setText(expBuffer + outBuffer + " = ");
+                    break;
+                }
+                case '÷': {
+                    result /= valBuffer;
+                    lblExpression.setText(expBuffer + outBuffer + " = ");
+                    break;
+                }
+            }
+            lblOutput.setText(String.valueOf(result));
+        }
+        isResultMode = true;
+    }//GEN-LAST:event_btnEqActionPerformed
+
+    private void btnNegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNegActionPerformed
+        String buffer = lblOutput.getText();
+        if (!buffer.equals("0")) {
+            switch (buffer.charAt(0)) {
+                case '-': buffer = buffer.substring(1, buffer.length()); break;
+                default : buffer = "-" + buffer;
+            }
+        }
+        lblOutput.setText(String.valueOf(buffer));
+    }//GEN-LAST:event_btnNegActionPerformed
+
+    private void btnDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDotActionPerformed
+        String buffer = lblOutput.getText();
+        for (char chr : buffer.toCharArray()) {
+            if (chr == '.') {
+                return;
+            }
+        }
+        if (isResultMode) {
+            buffer = "0";
+        }
+        lblOutput.setText(buffer + ".");
+        isResultMode = false;
+    }//GEN-LAST:event_btnDotActionPerformed
+
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        isResultMode = true;
+        String expBuffer = lblExpression.getText();
+        String outBuffer = lblOutput.getText();
+        double valBuffer = Double.parseDouble(outBuffer);
+        operator = '+';
+        if (expBuffer.isBlank()) {
+            result = valBuffer;
+            lblExpression.setText(outBuffer + " + ");
+        } else {
+            if (expBuffer.charAt(expBuffer.length() - 2) == '+') {
+                result += valBuffer;
+            }
+            lblExpression.setText(String.valueOf(result) + " + ");
+            lblOutput.setText(String.valueOf(result));
+        }
+    }//GEN-LAST:event_btnAddActionPerformed
+
+    private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
+        isResultMode = true;
+        String expBuffer = lblExpression.getText();
+        String outBuffer = lblOutput.getText();
+        double valBuffer = Double.parseDouble(outBuffer);
+        operator = '-';
+        if (expBuffer.isBlank()) {
+            result = valBuffer;
+            lblExpression.setText(outBuffer + " - ");
+        } else {
+            if (expBuffer.charAt(expBuffer.length() - 2) == '-') {
+                result -= valBuffer;
+            }
+            lblExpression.setText(String.valueOf(result) + " - ");
+            lblOutput.setText(String.valueOf(result));
+        }
+    }//GEN-LAST:event_btnSubActionPerformed
+
+    private void btnMultiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiActionPerformed
+        isResultMode = true;
+        String expBuffer = lblExpression.getText();
+        String outBuffer = lblOutput.getText();
+        double valBuffer = Double.parseDouble(outBuffer);
+        operator = '×';
+        if (expBuffer.isBlank()) {
+            result = valBuffer;
+            lblExpression.setText(outBuffer + " × ");
+        } else {
+            if (expBuffer.charAt(expBuffer.length() - 2) == '×') {
+                result *= valBuffer;
+            }
+            lblExpression.setText(String.valueOf(result) + " × ");
+            lblOutput.setText(String.valueOf(result));
+        }
+    }//GEN-LAST:event_btnMultiActionPerformed
+
+    private void btnDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivActionPerformed
+        isResultMode = true;
+        String expBuffer = lblExpression.getText();
+        String outBuffer = lblOutput.getText();
+        double valBuffer = Double.parseDouble(outBuffer);
+        operator = '÷';
+        if (expBuffer.isBlank()) {
+            result = valBuffer;
+            lblExpression.setText(outBuffer + " ÷ ");
+        } else {
+            if (expBuffer.charAt(expBuffer.length() - 2) == '÷') {
+                result /= valBuffer;
+            }
+            lblExpression.setText(String.valueOf(result) + " ÷ ");
+            lblOutput.setText(String.valueOf(result));
+        }
+    }//GEN-LAST:event_btnDivActionPerformed
+
+    private void btnSqrtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSqrtActionPerformed
+        isResultMode = true;
+        String expBuffer = lblExpression.getText();
+        String outBuffer = lblOutput.getText();
+        double valBuffer = Math.sqrt(Double.parseDouble(outBuffer));
+        
+        switch (operator) {
+            case '+': {
+                result += valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '-': {
+                result -= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '×': {
+                result *= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '÷': {
+                result /= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+        }
+        
+        lblExpression.setText(expBuffer + "√(" + outBuffer + ")");
+        lblOutput.setText(String.valueOf(result));
+    }//GEN-LAST:event_btnSqrtActionPerformed
+
+    private void btnExpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExpActionPerformed
+        isResultMode = true;
+        String expBuffer = lblExpression.getText();
+        String outBuffer = lblOutput.getText();
+        double valBuffer = Math.pow(Double.parseDouble(outBuffer), 2);
+        
+        switch (operator) {
+            case '+': {
+                result += valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '-': {
+                result -= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '×': {
+                result *= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '÷': {
+                result /= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+        }
+        
+        lblExpression.setText(expBuffer + "sqr(" + outBuffer + ")");
+        lblOutput.setText(String.valueOf(result));
+    }//GEN-LAST:event_btnExpActionPerformed
+
+    private void btnPerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPerActionPerformed
+        isResultMode = true;
+        String expBuffer = lblExpression.getText();
+        String outBuffer = lblOutput.getText();
+        double valBuffer = 1 / Double.parseDouble(outBuffer);
+        
+        switch (operator) {
+            case '+': {
+                result += valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '-': {
+                result -= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '×': {
+                result *= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '÷': {
+                result /= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+        }
+        
+        lblExpression.setText(expBuffer + "1/(" + outBuffer + ")");
+        lblOutput.setText(String.valueOf(result));
+    }//GEN-LAST:event_btnPerActionPerformed
+
+    private void btnPercActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPercActionPerformed
+        isResultMode = true;
+        String expBuffer = lblExpression.getText();
+        String outBuffer = lblOutput.getText();
+        double valBuffer = Double.parseDouble(outBuffer) / 100;
+        
+        switch (operator) {
+            case '+': {
+                result += valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '-': {
+                result -= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '×': {
+                result *= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+            case '÷': {
+                result /= valBuffer;
+                lblExpression.setText(expBuffer + outBuffer + " = ");
+                break;
+            }
+        }
+        
+        lblExpression.setText(expBuffer + String.valueOf(valBuffer));
+        lblOutput.setText(String.valueOf(result));
+    }//GEN-LAST:event_btnPercActionPerformed
     
     /**
      * @param args the command line arguments
@@ -1567,7 +1934,9 @@ public class Calculator extends javax.swing.JFrame {
     }
     
     // reserved
-    // size 486x722
+    private boolean isResultMode = false;
+    private double result = 0;
+    private char operator;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Panel;
