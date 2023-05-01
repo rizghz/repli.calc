@@ -68,6 +68,7 @@ public class Calculator extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculator");
+        setResizable(false);
 
         Panel.setBackground(new java.awt.Color(32, 32, 32));
         Panel.setPreferredSize(new java.awt.Dimension(490, 722));
