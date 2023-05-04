@@ -1768,10 +1768,15 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDivActionPerformed
 
     private void btnSqrtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSqrtActionPerformed
-        isResultMode = true;
+        
         String expBuffer = lblExpression.getText();
         String outBuffer = lblOutput.getText();
         double valBuffer = Math.sqrt(Double.parseDouble(outBuffer));
+        
+        if (isResultMode) {
+            expBuffer = "";
+            operator = ' ';
+        }
         
         switch (operator) {
             case '+': {
@@ -1799,13 +1804,20 @@ public class Calculator extends javax.swing.JFrame {
         
         lblExpression.setText(expBuffer + "√(" + outBuffer + ")");
         lblOutput.setText(String.valueOf(result));
+        
+        isResultMode = true;
     }//GEN-LAST:event_btnSqrtActionPerformed
 
     private void btnExpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExpActionPerformed
-        isResultMode = true;
+        
         String expBuffer = lblExpression.getText();
         String outBuffer = lblOutput.getText();
         double valBuffer = Math.pow(Double.parseDouble(outBuffer), 2);
+        
+        if (isResultMode) {
+            expBuffer = "";
+            operator = ' ';
+        }
         
         switch (operator) {
             case '+': {
@@ -1833,13 +1845,20 @@ public class Calculator extends javax.swing.JFrame {
         
         lblExpression.setText(expBuffer + "sqr(" + outBuffer + ")");
         lblOutput.setText(String.valueOf(result));
+        
+        isResultMode = true;
     }//GEN-LAST:event_btnExpActionPerformed
 
     private void btnPerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPerActionPerformed
-        isResultMode = true;
+        
         String expBuffer = lblExpression.getText();
         String outBuffer = lblOutput.getText();
         double valBuffer = 1 / Double.parseDouble(outBuffer);
+        
+        if (isResultMode) {
+            expBuffer = "";
+            operator = ' ';
+        }
         
         switch (operator) {
             case '+': {
@@ -1867,13 +1886,20 @@ public class Calculator extends javax.swing.JFrame {
         
         lblExpression.setText(expBuffer + "1/(" + outBuffer + ")");
         lblOutput.setText(String.valueOf(result));
+        
+        isResultMode = true;
     }//GEN-LAST:event_btnPerActionPerformed
 
     private void btnPercActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPercActionPerformed
-        isResultMode = true;
+        
         String expBuffer = lblExpression.getText();
         String outBuffer = lblOutput.getText();
         double valBuffer = Double.parseDouble(outBuffer) / 100;
+        
+        if (isResultMode) {
+            expBuffer = "";
+            operator = ' ';
+        }
         
         switch (operator) {
             case '+': {
@@ -1901,6 +1927,8 @@ public class Calculator extends javax.swing.JFrame {
         
         lblExpression.setText(expBuffer + String.valueOf(valBuffer));
         lblOutput.setText(String.valueOf(result));
+        
+        isResultMode = true;
     }//GEN-LAST:event_btnPercActionPerformed
     
     /**
